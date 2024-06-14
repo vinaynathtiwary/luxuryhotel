@@ -1,0 +1,121 @@
+/* css/navBar.module.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.2em;
+  color: white;
+  margin-right: 20px;
+}
+
+.link {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+/* Dropdown menu for smaller screens */
+.dropdownMenu {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dropdownLink, .dropdownButton {
+  color: white;
+  margin: 10px 0;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdownButton {
+  padding: 5px 10px;
+  border: 1px solid white;
+}
+
+.dropdownButton:hover, .dropdownLink:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .middle {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .button{
+    display: none;
+  }
+
+  .right {
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+}

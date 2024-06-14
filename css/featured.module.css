@@ -1,0 +1,42 @@
+/* components/FeaturedHotels.module.css */
+.featuredHotels {
+    text-align: center;
+    padding: 50px 20px;
+    background: white;
+  }
+  
+  .headline {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    color: grey;
+  }
+  
+  .subHeadline {
+    margin-top: 20px;
+  }
+  
+  .featuredTitle {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin-left: 10px;
+  }
+  
+  .icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: grey;
+  }
+  
